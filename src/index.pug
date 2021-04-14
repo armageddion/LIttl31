@@ -31,7 +31,7 @@ body.text-white
 
     section#intro.p-8.flex.items-center.justify-center(data-scroll-section)
       .max-w-screen-lg.w-full
-        h2.text-7xl.font-bold.text-yellow-500.text-right(
+        h2.text-7xl.font-bold.text-yellow-500.text-right.whitespace-nowrap(
           href='#intro',
           data-scramble-intro,
           data-scroll,
@@ -56,7 +56,7 @@ body.text-white
           style=`background-image: url(${project.background})`
         )
           .max-w-screen-lg.w-full
-            h2.text-7xl.font-bold.text-yellow-500(
+            h2.text-7xl.font-bold.text-yellow-500.whitespace-nowrap(
               data-scramble-project=project.title,
               data-scroll,
               data-scroll-repeat,
@@ -131,7 +131,6 @@ body.text-white
             - var mail = `${footer.email}`
             a.cursor-pointer.text-5xl.font-bold.text-yellow-500(
               href="mailto:"+mail,
-              data-scramble-contact
             ) Contact
         p.text-center.text-sm.mt-4.px-8(
           data-scroll,
